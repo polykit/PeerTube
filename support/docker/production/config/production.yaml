@@ -79,3 +79,15 @@ tracker:
 
 admin:
   email: null
+
+object_storage:
+  upload_acl:
+    public: null # Set to null here because we can't using env variables
+    private: null
+
+open_telemetry:
+  metrics:
+    enabled: true
+    prometheus_exporter:
+      hostname: '0.0.0.0'
+      port: 9091
